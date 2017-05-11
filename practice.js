@@ -262,7 +262,15 @@ methodCollection.logHello();
 
   //Code Here
 
+function makePerson(name,birth,ssn){
+  var object = {
+    name:name,
+    birthday:birth,
+    ssn:ssn
+  };
+  return object;
 
+}
 
 //NEXT PROBLEM
 
