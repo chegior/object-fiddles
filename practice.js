@@ -121,10 +121,17 @@ for ( var key in alsoMe){
 
   //Code Here
 
+  var album ={
+    song1:'show me how to live', song2:'stone',song3:'religion',song4:'americana',song5:'sweet living'
+  }
+
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
 
+for ( var key in album){
+  alert(album[key]);
+}
 
 
 
