@@ -44,7 +44,7 @@ favoriteThings.brand = "Dodge";
 
   //Code here
 
-
+favoriteThings.food = 'Chicken Nuggets';
 
 
 //NEXT PROBLEM
@@ -61,6 +61,14 @@ that is named color, with the value being the color of your backpack. */
 
   //Code here
 
+  var backPack = {
+
+
+  };
+
+  var item = "firstPocket";
+
+  backPack["firstPocket"] = 'chapstick';
 //After you do the above, alert your entire backPack object.
 
   //Code here
