@@ -146,10 +146,10 @@ for ( var key in album){
 
   var states ={
     utah:50000,
-    nevada:200000,
-    california:3423333,
-    florida:2133132,
-    georgia:324123412
+    nevada:200,
+    california:3423,
+    florida:2132,
+    georgia:3212
 
   };
 
@@ -191,7 +191,7 @@ that each value is truthy. If it's not truthy, remove it from the object. */
 
 user1.name = 'Chedro Cardenas';
 user1.username = 'xero85';
-user1.age = 32;
+//user1.age = 32;
 
 
 //NEXT PROBLEM
@@ -263,13 +263,11 @@ methodCollection.logHello();
   //Code Here
 
 function makePerson(name,birth,ssn){
-  var object = {
+  return object = {
     name:name,
     birthday:birth,
     ssn:ssn
   };
-  return object;
-
 }
 
 //NEXT PROBLEM
@@ -279,6 +277,14 @@ function makePerson(name,birth,ssn){
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
+
+  function makeCard(cardNum,expDat,secCod){
+    return card={
+      cardNumber:cardNum,
+      expirationDate:expDat,
+      securityCode:secCod
+    };
+  }
 
 
 
@@ -292,3 +298,16 @@ function makePerson(name,birth,ssn){
 */
 
   //Code Here
+
+  function bindCard(objPer, objCar){
+    objPer = makePerson();
+    objCard = makeCard();
+    return object = {
+      name:objPer.name,
+      birthday:objPer.birthday,
+      ssn:objPer.ssn,
+      cardNumber:objCard.cardNumber,
+      expirationDate:objCard.expirationDate,
+      securityCode:objCard.securityCode
+    };
+  }
